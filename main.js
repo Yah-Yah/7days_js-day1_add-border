@@ -24,4 +24,10 @@ function addBorder(array) {
     // console.log(element);
     return finalArray;
   })
+  // console.log(finalArray);
+  finalArray.forEach((element) => {
+    let eachParagraph = document.createElement('p');
+    eachParagraph.innerHTML = element;
+    document.body.appendChild(eachParagraph);
+  })
 }
